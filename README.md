@@ -17,5 +17,5 @@ N/A
 > add more compliments
 # Authors
 Me
-# Cpoyright and lincense
+# Copyright and lincense
 > Free
