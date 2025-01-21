@@ -11,7 +11,7 @@ async function fetchCompliments(){
       return ['An error has occured', 'Please try again later']; //standard messages when error occures
   } finally {
     console.log('Fetch completed'); //when fetch is completed
-  }
+  };
 };
 
 //Display random compliment
@@ -23,7 +23,7 @@ function displayRandomCompliment(compliments){
     const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
     //Display random compliment
     complimentDisplay.textContent = randomCompliment;    
-}
+};
 //Main function
 (async()=>{
     const compliments = await fetchCompliments();

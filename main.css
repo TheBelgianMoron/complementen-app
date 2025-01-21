@@ -1,0 +1,47 @@
+body {
+    font-family: Comic Sans MS;
+    background-color: #e5e5e5;
+}
+
+.container {
+    width: 40rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+}
+
+#compliment-button{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(10, 69, 89);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 20rem;
+    transition: background-color 0.3s ease-in-out;
+    animation: changeBackground 5s infinite;
+}
+
+#compliment-button:hover{
+    background-color: rgb(116, 147, 157);
+}
+
+@keyframes changeBackground {
+    0% {background-color: red;}
+    25% {background-color: yellow; color: black;}
+    50% {background-color: blue;}
+    75% {background-color: green;}
+    100% {background-color: red;}
+}
+
