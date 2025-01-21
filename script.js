@@ -8,15 +8,21 @@ async function fetchCompliments(){
     return data.compliments;
   } catch (error) {
       console.error('Problem happened during loading:', error);
-      return ['An error has occured', 'Please try again later']; //standaard messages when error occures
+      return ['An error has occured', 'Please try again later']; //standard messages when error occures
   } finally {
-    console.log('Fetch completed');
+    console.log('Fetch completed'); //when fetch is completed
   }
 };
 
 //Display random compliment
 function displayRandomCompliment(compliments){
-    console.log('My compliments, Yipee', compliments);
+    //console.log('My compliments, Yipee', compliments);
+    //Take element out of html
+    const complimentDisplay = document.getElementById('compliment');
+    //Take random compliment
+    const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+    //Display random compliment
+    complimentDisplay.textContent = randomCompliment;    
 }
 //Main function
 (async()=>{
